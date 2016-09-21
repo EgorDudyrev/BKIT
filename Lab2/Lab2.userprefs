@@ -1,15 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Lab1/Program.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Lab2/Program.cs">
     <Files>
-      <File FileName="Lab1/Program.cs" Line="38" Column="13" />
+      <File FileName="Lab2/Program.cs" Line="98" Column="3" />
+      <File FileName="../Lab1/Lab1/Lab1/Program.cs" Line="37" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="Lab1" expanded="True">
-            <Node name="Properties" expanded="True" />
-            <Node name="Program.cs" expanded="True" selected="True" />
+          <Node name="Lab2" expanded="True">
+            <Node name="Program.cs" selected="True" />
           </Node>
         </State>
       </Pad>
