@@ -25,18 +25,11 @@ namespace Lab1
                 x1 = (-B + sq) / (2 * A);
                 x2 = (-B - sq) / (2 * A);
 
-                if (D == 0)
-                    Console.WriteLine("D = {0}, x1 = x2 = {1}", D, x1);
-                else
-                    Console.WriteLine("D = {0}, x1 = {1}, x2 = {2}", D, x1, x2);
+                if (D == 0) Console.WriteLine("D = {0}, x1 = x2 = {1}", D, x1);
+                else Console.WriteLine("D = {0}, x1 = {1}, x2 = {2}", D, x1, x2);
             }
-            else
-            {
-                Console.WriteLine("Ошибка. Дискриминант = {0} меньше 0. Корней нет", D);
-            }
- 
+            else Console.WriteLine("Ошибка. Дискриминант = {0} меньше 0. Корней нет", D);
             
-
             Console.ReadLine();
         }
 
@@ -59,6 +52,5 @@ namespace Lab1
                 break;
             }
         }
-
     }
 }
