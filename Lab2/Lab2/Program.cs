@@ -10,14 +10,16 @@ namespace Lab2
 	/// <summary>
 	/// Абстрактный класс геом. фигуры
 	/// </summary>
-	abstract class Figure
+	abstract class Figure: IPrint
 	{
 		/// <summary>
 		/// Вычисление площади фигуры
 		/// </summary>
 		public abstract double Area();
+
+		public void Print() {Console.WriteLine(ToString());}
 	}
-	class Rect : Figure, IPrint
+	class Rect : Figure
 	{
 		/// <summary>
 		/// Конструктор прямоугольника по ширине и высоте
@@ -32,12 +34,11 @@ namespace Lab2
 		{
 			return string.Format ("Прямоугольник: Ширина = {0}, Высота = {1}, Площадь = {2}.", Width, Height, Area());
 		}
-		public void Print() {Console.WriteLine(ToString());}
 
 		public double Width { get; protected set;}
 		public double Height { get; protected set;}
 	}
-	class Quadr : Rect, IPrint
+	class Quadr : Rect
 	{
 		/// <summary>
 		/// Конструктор квадрата по длине стороны
@@ -49,9 +50,8 @@ namespace Lab2
 		{
 			return string.Format ("Квадрат: Длина стороны = {0}, Площадь = {1}", Height, Area());
 		}
-		//public void Print() {Console.WriteLine(ToString());}
 	}
-	class Circle : Figure, IPrint
+	class Circle : Figure
 	{
 		/// <summary>
 		/// Конструктор круга по радиусу
@@ -65,7 +65,6 @@ namespace Lab2
 		{
 			return string.Format ("Круг: Радиус = {0}, Площадь = {1}", Rad, Area());
 		}
-		public void Print() {Console.WriteLine(ToString());}
 
 		/// <summary>
 		/// Получать и устанавливать радиус круга
